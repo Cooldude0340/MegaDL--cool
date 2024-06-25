@@ -5,13 +5,13 @@
 import os
 
 class Config:
-    API_ID = int(os.environ.get("API_ID", 123))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("API_ID", 2712818))
+    API_HASH = os.environ.get("API_HASH", "fda406cc4f648c303a0fb77255f2a026")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1880774062:AAHbe7FpEsd1UT5Yx7PITGrSTuWmQfQWc_g")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     TG_MAX_SIZE = 2040108421
-    OWNER_ID = int(os.environ.get("OWNER_ID", 1316963576))
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+    OWNER_ID = int(os.environ.get("OWNER_ID", 1517181772))
+    LOG_CHANNEL = int(os.environ.get("1210713881"))
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
 
 
@@ -23,13 +23,11 @@ class TEXT:
 
 📚 **Library:** [Pyrogram](https://docs.pyrogram.org)
 
-📡 **Hosted On:** [Heroku](https://heroku.com)
+🧑‍💻 **Developer:** [NoOne](https://t.me/shinchan_movies_hindi)
 
-🧑‍💻 **Developer:** [Safone](https://t.me/ImSafone)
+👥 **Support Group:** [Nope](https://t.me/shinchan_movies_hindi)
 
-👥 **Support Group:** [AsmSupport](https://t.me/AsmSupport)
-
-📢 **Updates Channel:** [Ｓ１ ＢＯＴＳ](https://t.me/AsmSafone)
+📢 **Updates Channel:** [shinchan movies](https://t. me/shinchan_movies_hindi)
 """
 
   HELP_USER = """
@@ -37,7 +35,7 @@ This is **{bot_name}**
 
 This Bot Can Download Files & Videos From Mega Links & Upload To Telegram. Just Send Any Mega.nz Link & See The Magic. You Can Also Add or Change Caption: Just Select An Uploaded File/ Video or Forward Me Any Telegram File & Then Write The Text You Want To Be Caption On The File As A Reply To That File & The Text You Wrote Will Be Attached As Caption 😁! 
 
-**Made With ❤️ By @AsmSafone! 👑**
+**Made With ❤! 👑**
 """
 
   START_TEXT = """
