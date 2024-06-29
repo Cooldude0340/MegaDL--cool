@@ -3,7 +3,10 @@
 
 from config import Config
 from pyrogram import Client, filters
+def edited(, _, m: Message):
+    return bool(m.edit_date)
 
+filters.edited = filters.create(edited)
 @Client.on_message(filters.reply & filters.text & filters.private & ~filters.edited)
 async def caption(bot, message):
     file = message.reply_to_message
