@@ -4,7 +4,7 @@
 from config import Config
 from pyrogram import Client, filters
 
-def edited(_, __, m: message):
+def edited(_, __, m: messages):
     return bool(m.edit_date)
     
 filters.edited = filters.create(edited)
