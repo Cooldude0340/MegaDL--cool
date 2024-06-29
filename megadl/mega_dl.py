@@ -49,7 +49,7 @@ def DownloadMegaLink(url, alreadylol, download_msg):
         print(e)
 
 
-@Client.on_message(filters.regex(MEGA_REGEX) & filters.private & filters.incoming & ~filters.edited)
+@Client.on_edited_message(filters.regex(MEGA_REGEX) & filters.private & filters.incoming)
 async def megadl(bot, message):
     if Config.UPDATES_CHANNEL:
       fsub = await handle_force_subscribe(bot, message)
