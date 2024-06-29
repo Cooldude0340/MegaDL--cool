@@ -4,11 +4,7 @@
 from config import Config
 from pyrogram import Client, filters
 
-def edited(_, __, m: messages):
-    return bool(m.edit_date)
-    
-filters.edited = filters.create(edited)
-@Client.on_message(filters.reply & filters.text & filters.private & ~filters.edited)
+@Client.on_edited_message(filters.reply & filters.text & filters.private)
 async def caption(bot, message):
     file = message.reply_to_message
     if file.media and not file.video_note and not file.sticker:
