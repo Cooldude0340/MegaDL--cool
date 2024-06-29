@@ -182,7 +182,7 @@ async def megadl(bot, message):
         print(e)
         return
 
-@Client.on_message(filters.command("cancel") & filters.private & filters.incoming & ~filters.edited)
+@Client.on_edited_message(filters.command("cancel") & filters.private & filters.incoming)
 async def cancel_dl(bot, message):
     if Config.UPDATES_CHANNEL:
       fsub = await handle_force_subscribe(bot, message)
